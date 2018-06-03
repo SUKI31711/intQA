@@ -30,14 +30,13 @@ f.DEFINE_boolean("visualize_evaluated_results", True,
         "predicted spans to a file when running evaluation.")
 f.DEFINE_string("log_dir", "log", "Directory to log training summaries. " +
         "These summaries can be monitored with tensorboard.")
-f.DEFINE_string("clear_logs_before_training", False,
-        "Whether to clear the log directory before starting training.")
+f.DEFINE_boolean("clear_logs_before_training", False, "Whether to clear the log directory before starting training.")
 f.DEFINE_integer("log_every", 100, "Frequency to log loss and gradients.")
-f.DEFINE_string("log_loss", True, "Whether to log loss summaries.")
-f.DEFINE_string("log_gradients", True, "Whether to log gradient summaries.")
-f.DEFINE_string("log_exact_match", True, "Whether to log exact match scores.")
-f.DEFINE_string("log_f1_score", True, "Whether to log f1 scores.")
-f.DEFINE_string("log_valid_every", 100, "Frequency (in iterations) to log " +
+f.DEFINE_boolean("log_loss", True, "Whether to log loss summaries.")
+f.DEFINE_boolean("log_gradients", True, "Whether to log gradient summaries.")
+f.DEFINE_boolean("log_exact_match", True, "Whether to log exact match scores.")
+f.DEFINE_boolean("log_f1_score", True, "Whether to log f1 scores.")
+f.DEFINE_integer("log_valid_every", 100, "Frequency (in iterations) to log " +
         "loss & gradients for the validation data set.")
 f.DEFINE_boolean("use_s3", False,
         "Whether to use AWS S3 storage to save model checkpoints. " +
