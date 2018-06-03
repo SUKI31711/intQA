@@ -57,13 +57,14 @@ python setup.py develop
 CUDA8, CUDNN7이 미리 인스톨 되어있어야함.
 
 1. Installing TensorFlow on Ubuntu 클릭
+1. `pip install tensorflow-gpu==1.4`
 1. 아래중에 자기 파이썬 환경과 맞는 (`페이지에서 Installing with virtualenv step 6`를 참고) 하여 whl 파일을 찾는다
 	* python 3.4 with GPU - `https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0rc1-cp34-cp34m-linux_x86_64.whl`
 	* python 3.5 with GPU - `https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0rc1-cp35-cp35m-linux_x86_64.whl`
 	* python 3.6 with GPU - `https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0rc1-cp36-cp36m-linux_x86_64.whl`
 	* `CUDA9` tensorflow whl 파일은 [링크](https://github.com/mind/wheels/releases/tag/tf1.4-gpu-cuda9) 참조 
 1. 다음 명령어 실행 (<WHL_FILE_FROM_STEP_3>를 step3에서 찾은 whl과 치환한다)
-	`pip3 install --upgrade <WHL_FILE_FROM_STEP_3>`
+	`pip install --ignore-installed --upgrade <WHL_FILE_FROM_STEP_3>`
 
 #### 설치 확인
 
