@@ -12,7 +12,7 @@
 ### Environment setup
 
 ```bash
-git clone https://github.com/DeepLearningCollege/qa.git intQA
+git clone https://github.com/DeepLearningCollege/intQA.git
 cd intQA
 virtualenv -p python3 envIntQA
 source envIntQA/bin/activate
