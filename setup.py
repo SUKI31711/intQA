@@ -12,9 +12,20 @@ def main(_):
     options = get_options_from_flags()
     data_dir = options.data_dir
     download_dir = options.download_dir
+
+    # 디렉토리 생성
+    # data_dir = Pretrained 된 Word-Embedding Vector를 다운로드 받을 디렉토리
+    # download_dir = SQuAD DataSet를 다운로드 받을 디렉토리
     for d in [data_dir, download_dir]:
+        # 디렉토리를 재귀 적으로 생성하며 디렉토리가 이미 존재하면 예외를 발생시키지 않음.
         os.makedirs(d, exist_ok=True)
+
+    # 데이터 다운로드 단계
+    # 첫째, GloVe vectors를 https://nlp.stanford.edu/projects/glove/ 로 부터 다운로드 받음.
+    # 둘째, SQuAD Dataset 다운로드 받음
     download_data(download_dir)
+
+    #
     split_vocab_and_embedding(data_dir, download_dir)
     DataParser(data_dir, download_dir).create_train_data()
     if options.use_cove_vectors:
