@@ -28,7 +28,7 @@ word_embedding, char_embedding, learning_rate, optimizer 에 대한 Tensorflow V
 1. [L62-L64](https://github.com/DeepLearningCollege/intQA/blob/2418ecc92c80c9bad93835e4d3983605c9bb2856/train/trainer.py#L62-L64):
 모델 초기화
 1. [L73-L75](https://github.com/DeepLearningCollege/intQA/blob/2418ecc92c80c9bad93835e4d3983605c9bb2856/train/trainer.py#L73-L75):
-그레디언트를 초깃값들을 가져와서, global norm 으로 clipping 후, optimizer를 통해 모델 variable들을 업데이트 한다???
+그레디언트를 초깃값들을 가져와서, global norm 으로 clipping 후, optimizer를 통해 모델 variable들을 업데이트 하도록 wire한다.
 1. [L80-L86](https://github.com/DeepLearningCollege/intQA/blob/2418ecc92c80c9bad93835e4d3983605c9bb2856/train/trainer.py#L80-L86):
 로그 파일 정리
 1. [L87-L106](https://github.com/DeepLearningCollege/intQA/blob/2418ecc92c80c9bad93835e4d3983605c9bb2856/train/trainer.py#L87-L106):
