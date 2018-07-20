@@ -2,8 +2,8 @@
 """
 
 VOCAB_CHARS_FILE = "vocab.chars.npy"
-TRAIN_SQUAD_FILE = "train-v1.1.json"
-DEV_SQUAD_FILE = "dev-v1.1.json"
+TRAIN_SQUAD_FILE = "train-v2.0.json"
+DEV_SQUAD_FILE = "dev-v2.0.json"
 
 COVE_WEIGHTS_FOLDER = "cove_weights"
 COVE_WEIGHT_NAMES = ['weight_ih_l0', 'weight_hh_l0', 'bias_ih_l0',
@@ -36,9 +36,9 @@ WORD_VEC_DIM = 300
 MAX_WORD_LEN = 25
 VECTOR_FILE = "glove.840B.300d.txt"
 VECTOR_ZIP_FILE = "glove.840B.300d.zip"
-SQUAD_TRAIN_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json"
-SQUAD_TRAIN_FILE = "train-v1.1.json"
-SQUAD_DEV_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json"
+SQUAD_TRAIN_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json"
+SQUAD_TRAIN_FILE = "train-v2.0.json"
+SQUAD_DEV_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v2.0.json"
 SQUAD_DEV_FILE = "dev-v1.1.json"
 
 EMBEDDING_FILE = "glove.embedding.npy"
